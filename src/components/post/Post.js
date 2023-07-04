@@ -33,17 +33,17 @@ const Post = ({post}) => {
 
   let content = null 
 
-  if(post.image){
+  if(post.user.image){
     content = (
       <Image source={{
-        uri: post.image
-      }} 
+        uri: post?.user?.image
+      }}  
       style={styles.image}
       />
     )
   }
-  else if (post.images){
-    content = (<Carousel  images = {post.images} />)
+  else if (post?.user?.image){
+    content = (<Carousel  images = {post?.user?.image} />)
   }
   else if (post.video){
     content = (<VideoPlayer  video ={post.video}/>)
@@ -55,7 +55,7 @@ const Post = ({post}) => {
       <View>
         <Image
         source={{
-          uri: post.user.image
+          uri: post?.user?.image
         }} 
         style={styles.userAvatar}
          />

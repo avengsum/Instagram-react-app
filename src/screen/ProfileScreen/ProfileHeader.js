@@ -8,7 +8,7 @@ const ProfileHeader = () => {
         <View>
             <View>
                 <Image
-                source={{uri:user.image}} style={styles.avatar}
+                //source={{uri:user?.image}} style={styles.avatar}
                  />
 
                 <View>

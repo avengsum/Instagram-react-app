@@ -1,5 +1,4 @@
 import Video from 'react-native-video'
-import style from '../post/style'
 import { View , Text , StyleSheet ,Pressable } from 'react-native'
 import { useState } from 'react'
 import colors from '../../theme/colors'
